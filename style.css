@@ -1,74 +1,109 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
+/* RESET BÁSICO */
+* {
     margin: 0;
-    padding: 40px 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* FONDO GENERAL */
+body {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    color: #333;
+}
+
+/* CONTENEDOR PRINCIPAL DEL CV */
 .cv {
     width: 800px;
-    background: white;
+    background-color: #ffffff;
     margin: auto;
     padding: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
+/* FOTO */
 .foto {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .foto img {
-    width: 200px;
-    height: 230px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
-    border: 1px solid #ccc;
+    border-radius: 50%;
+    border: 4px solid #6c6c6c;
 }
 
+/* NOMBRE */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #222;
+}
+
+/* TÍTULOS DE SECCIÓN */
 .seccion-titulo {
-    background-color: #777;
-    color: white;
+    background-color: #6c6c6c;
+    color: #fff;
+    padding: 8px 12px;
+    margin: 25px 0 10px;
     font-weight: bold;
-    padding: 6px;
-    margin-top: 25px;
     font-size: 14px;
+    letter-spacing: 1px;
 }
 
-.datos {
-    width: 100%;
-    border-collapse: collapse;
-    font-weight: bold;
-    padding: 6px;
-    margin-top: 10px;
-    font-size: 13px;
-}
-
-.datos td {
-    padding: 6px;
-    vertical-align: top;
-}
-
-.datos td:first-child {
-    width: 40%;
-}
-
-.texto {
-    font-size: 13px;
+/* TEXTO GENERAL */
+p {
+    line-height: 1.6;
+    font-size: 14px;
     text-align: justify;
-    margin-top: 10px;
 }
 
+/* LISTAS */
 .formacion {
-    margin-top: 10px;
-    font-size: 13px;
+    list-style: none;
+    padding-left: 10px;
 }
 
 .formacion li {
     margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #005fa3;
+}
+
+/* FOOTER ALINEADO CON EL CV */
+footer {
+    width: 800px;
+    margin: 30px auto 0;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+
+footer a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
